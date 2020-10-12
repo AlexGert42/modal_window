@@ -1,0 +1,115 @@
+.my-modal {}
+.my-modal.open .my-modal__ovelay,
+.my-modal.open .my-modal__window {
+    opacity: 1;
+    z-index: 1000;
+}
+
+.my-modal__ovelay, .my-modal__window{
+    z-index: -1;
+    opacity: 0;
+}
+.my-modal__ovelay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: background-color .5s ;
+}
+
+.my-modal.open .my-modal__window {
+    transform: translateY(50%);
+}
+.my-modal.open .my-modal__ovelay {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.my-modal.hide .my-modal__ovelay,
+.my-modal.hide .my-modal__window {
+    opacity: 1;
+    z-index: 1000;
+}
+.my-modal.hide .my-modal__window {
+    transform: translateY(-100%);
+}
+.my-modal.hide .my-modal__ovelay {
+    background-color: rgba(0, 0, 0, 0);
+}
+.my-modal__window{
+    width: 600px;
+    min-height: 200px;
+    background-color: #fff;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Geneva, Tahoma, sans-serif;
+    box-shadow: 0 0 10px 5px #535252;
+
+    transform: translateY(-10%);
+    transition: transform .5s ease-in-out;
+}
+
+.my-modal__header{
+    background-color: #c7c7c7c7;
+    box-shadow: 0 0 3px #535252;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+.my-modal__title{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 800;
+    color: #535252;
+}
+.my-modal__close{
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #535252;
+    font-weight: 800;
+}
+
+.my-modal__main{
+    padding: 10px 20px;
+}
+
+.my-modal__footer{
+    background-color: #c7c7c7c7;
+    box-shadow: 0 0 3px #535252;
+    
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: flex-end;
+}
+.my-modal__footer button{
+    border: none;
+    padding: 5px 5px;
+    background-color: #c7c7c7c7;
+    width: 100px;
+    color: #535252;
+    font-size: 1rem;
+    text-transform: capitalize;
+    box-shadow: 0 0 3px #535252;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+
+
+
+
+.hide {
+
+}
+
+
+
+
+
+
+
+
