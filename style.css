@@ -1,4 +1,4 @@
-.my-modal {}
+/* .my-modal {} */
 .my-modal.open .my-modal__ovelay,
 .my-modal.open .my-modal__window {
     opacity: 1;
@@ -102,9 +102,7 @@
 
 
 
-.hide {
 
-}
 
 
 
